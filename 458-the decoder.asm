@@ -1,4 +1,4 @@
-.model small
+  .model small
 .data
      str db 1000 dup(?)
      char db ?
@@ -23,6 +23,7 @@
     int 21h
     mov cx,bx
     mov bx,0 
+    dec cx
     jmp print
    
    print:
@@ -44,6 +45,5 @@
     
     
     
-
 
 
